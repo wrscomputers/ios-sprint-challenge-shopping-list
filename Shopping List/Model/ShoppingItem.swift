@@ -8,13 +8,12 @@
 
 import UIKit
 
-struct ShoppingItem {
+struct ShoppingItem: Codable {
     let name: String
-    let addedToList: Bool
-    
+    var addedToList: Bool = false
     var itemImage: UIImage? {
-        let imageName = name
-        let convertedImage = UIImage(contentsOfFile: imageName)
+//        let imageName = name
+        let convertedImage = UIImage(named: name)
         return convertedImage
     }
 }

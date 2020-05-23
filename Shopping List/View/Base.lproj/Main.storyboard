@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShoppingItems" id="g3C-Zw-SfD" customClass="ShoppingListCollectionViewCell" customModule="Shopping_List" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShoppingItems" id="g3C-Zw-SfD" customClass="ShoppingListViewCell" customModule="Shopping_List" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SDl-Fk-qOY">
@@ -34,7 +34,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wq4-Ep-93d">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Added" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-U7-o8L">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Added" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxd-U7-o8L">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -68,9 +68,9 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="250"/>
                                 <connections>
-                                    <outlet property="addedTOCartLabel" destination="Zxd-U7-o8L" id="jgV-qI-ZVU"/>
-                                    <outlet property="imageView" destination="dcN-hT-YTI" id="xpB-P0-UWi"/>
-                                    <outlet property="nameLabel" destination="eqj-ro-FeO" id="L9d-mZ-1J8"/>
+                                    <outlet property="cartLabel" destination="Zxd-U7-o8L" id="01L-CI-dU2"/>
+                                    <outlet property="imageView" destination="dcN-hT-YTI" id="ggA-AJ-60Q"/>
+                                    <outlet property="nameLabel" destination="eqj-ro-FeO" id="q9J-XI-yVh"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -94,7 +94,7 @@
         <!--PlaceOrderViewController-->
         <scene sceneID="VwZ-SN-N1X">
             <objects>
-                <viewController title="PlaceOrderViewController" id="abl-uw-o17" sceneMemberID="viewController">
+                <viewController title="PlaceOrderViewController" id="abl-uw-o17" customClass="OrderShoppingListViewController" customModule="Shopping_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ejR-V2-Kln">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
